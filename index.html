@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge ONE - Principíante en programación</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="img/logo.svg" alt="Logo de Alura">
+        <h1>Challenge 1: Oracle Next Education</h1>
+    </header>
 
     <main>
 
@@ -17,10 +23,14 @@
                 <div class="introduction-conteiner">
                     <textarea id="original-text" cols="30" rows="10" placeholder="Ingrese el texto aquí.."></textarea>
                     <div class="bottom-interface">
-                        <p id="message-to-user">Solo letras minúsculas y sin acentos</p>
+                        <div class="alert-to-user">
+                            <img src="img/alert-circle.svg" alt="Círculo de alerta">
+                            <p class="message-to-user">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        
                         <div class="buttons">
-                            <button onclick="showEncryptedMessage()">Cifrar</button>
-                            <button>Descifrar</button>
+                            <button class="encrypt-button" onclick="showEncryptedMessage()" >Encriptar</button>
+                            <button class="decrypt-button" onclick="">Desencriptar</button>
                         </div>
                         
                     </div>
@@ -33,11 +43,13 @@
                 
                 <div class="response-conteiner">
                     <div class="limit-text-conteiner">
-                        <p id="proccessed-text" class="proccessed-text">Soy un parrafo</p>
+                        <img src="img/figura.svg" alt="Imagen Ilustrativa de una persona buscando algo">
+                        <p class="proccessed-text">Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                     </div>
                     
 
-                    <button id="copy-button" >Copiar</button>
+                    <button class="copy-button">Copiar</button>
                 </div>
 
             </div>
@@ -49,6 +61,6 @@
     <footer>
         <p>&copy; Gonzalo Paez 2024</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
