@@ -10,17 +10,38 @@
     <header></header>
 
     <main>
-        
-        <section id="introduction-section">
-            <textarea id="original-text" cols="30" rows="10" placeholder="Ingrese el texto aquí.."></textarea>
-            <p id="message-to-user">Solo letras minúsculas y sin acentos</p>
-            <button id="encrypt-button" onclick="showEncryptedMessage()">Cifrar</button>
-            <button id="decrypt-button">Descifrar</button>
-        </section>
 
-        <section id="response-section" class="">
-            <p id="proccessed-text" class="proccessed-text"></p>
-            <button id="copy-button" class="copy-button">Copiar</button>
+        <section>
+            <div class="introduction-section">
+
+                <div class="introduction-conteiner">
+                    <textarea id="original-text" cols="30" rows="10" placeholder="Ingrese el texto aquí.."></textarea>
+                    <div class="bottom-interface">
+                        <p id="message-to-user">Solo letras minúsculas y sin acentos</p>
+                        <div class="buttons">
+                            <button onclick="showEncryptedMessage()">Cifrar</button>
+                            <button>Descifrar</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="response-section">
+                
+                <div class="response-conteiner">
+                    <div class="limit-text-conteiner">
+                        <p id="proccessed-text" class="proccessed-text">Soy un parrafo</p>
+                    </div>
+                    
+
+                    <button id="copy-button" >Copiar</button>
+                </div>
+
+            </div>
+            
         </section>
 
     </main>
