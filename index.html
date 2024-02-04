@@ -22,6 +22,11 @@
 
                 <div class="introduction-conteiner">
                     <textarea id="original-text" cols="30" rows="10" placeholder="Ingrese el texto aquí.."></textarea>
+                    <div class="buttons-function">
+                        <button class="auxiliar-buttons" onclick="copyInputText()"><img class="icons-images" src="/img/icon-copy.png"></button>
+                        <button class="auxiliar-buttons" onclick="pasteText()"><img class="icons-images"  src="/img/icon-paste.png"></button>
+                        <button class="auxiliar-buttons" onclick="cleanInput()"><img class="icons-images"  src="/img/icon-delete.png"></button>
+                    </div>
                     <div class="bottom-interface">
                         <div class="alert-to-user">
                             <img src="img/alert-circle.svg" alt="Círculo de alerta">
@@ -29,8 +34,8 @@
                         </div>
                         
                         <div class="buttons">
-                            <button class="encrypt-button" onclick="showEncryptedMessage()" >Encriptar</button>
-                            <button class="decrypt-button" onclick="">Desencriptar</button>
+                            <button class="encrypt-button" onclick="showEncryptedMessage()">Encriptar</button>
+                            <button class="decrypt-button" onclick="showDecryptedMessage()">Desencriptar</button>
                         </div>
                         
                     </div>
@@ -43,13 +48,13 @@
                 
                 <div class="response-conteiner">
                     <div class="limit-text-conteiner">
-                        <img src="img/figura.svg" alt="Imagen Ilustrativa de una persona buscando algo">
-                        <p class="proccessed-text">Ningún mensaje fue encontrado</p>
-                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <img src="img/figura.svg" alt="Imagen Ilustrativa de una persona buscando algo" class="provisional-image">
+                        <p class="processed-text">Ningún mensaje fue encontrado</p>
+                        <p class="provisional-text">Ingresa el texto que desees encriptar o desencriptar.</p>
                     </div>
                     
 
-                    <button class="copy-button">Copiar</button>
+                    <button class="copy-button" onclick="copyProcessedText()">Copiar</button>
                 </div>
 
             </div>
