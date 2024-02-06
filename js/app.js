@@ -2,7 +2,7 @@
 /**
  * Obtiene el texto del elemento textarea de la interfaz de usuario.
  * 
- * Esta función busca el elemento por su ID y devuelve su valor.
+ * Esta función busca el elemento por su ID y retorna su valor.
  * @returns {string} - El texto obtenido del elemento de entrada.
  */ 
 function obtenerTexto() {
@@ -48,7 +48,7 @@ function encryptText(text) {
             textEncrypted += text[i]
         }
     }
-    // Devuelve el texto encriptado.
+    // Retorna el texto encriptado.
     return textEncrypted;
 }
 
@@ -67,7 +67,7 @@ function decryptText(text) {
     .replace(/imes/g, "i")
     .replace(/ober/g, "o");
 
-    // Devuelve el texto descifrado
+    // Retorna el texto descifrado
     return textDecrypted;
 }
 
@@ -79,6 +79,8 @@ function decryptText(text) {
  * - Oculta un texto provisional.
  * - Muetra un botón oculto.
  * - Restablece propiedades de altura, justificación y alineación del contenedor.
+ * 
+ * @returns {void} - No retorna ningún valor.
  */
 function cleanResponseConteiner() {
     // Oculta la imagen dentro del contenedor.
@@ -113,6 +115,8 @@ function cleanResponseConteiner() {
  * Esta función obtiene el texto original, lo cifra y muestra el resultado en la interfaz.
  * Si no hay texto original, no realiza ninguna acción.
  * Limpia cualquier contenido anterior en el contenedor de respuestas.
+ * 
+ * @returns {void} - No retorna ningún valor.
  */
 function showEncryptedMessage(){
     // Obtiene el texto original.
@@ -162,6 +166,8 @@ async function writeClipboardText(text) {
  * 
  * Esta función obtiene el texto procesado de la interfaz y lo copia en el portapapeles
  * utilizando la función asíncrona `writeClipboardText`.
+ * 
+ * @returns {void} - No retorna ningún valor.
  */
 function copyProcessedText(){
     // Obtiene el texto procesado desde la interfaz.
@@ -174,7 +180,7 @@ function copyProcessedText(){
 /**
  * Copia el texto obtenido desde una fuente (por ejemplo, un campo de entrada) al portapapeles.
  *
- * @returns {void} - No devuelve ningún valor.
+ * @returns {void} - No retorna ningún valor.
  */
 function copyInputText(){
     const inputText = obtenerTexto();
@@ -184,7 +190,7 @@ function copyInputText(){
 /**
  * Limpia el contenido del campo de entrada (input) identificado por su ID.
  *
- * @returns {void} - No devuelve ningún valor.
+ * @returns {void} - No retorna ningún valor.
  */
 function cleanInput() {
     // Obtiene el elemento de entrada por su ID (en este caso, "original-text")
@@ -199,7 +205,7 @@ function cleanInput() {
  *
  * Utiliza la API del portapapeles para leer el texto del portapapeles y asignarlo al valor del campo de entrada.
  *
- * @returns {void} - No devuelve ningún valor.
+ * @returns {void} - No retorna ningún valor.
  */
 function pasteText() {
     // Obtén el elemento de entrada por su ID ("original-text")
