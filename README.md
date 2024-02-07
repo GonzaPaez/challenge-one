@@ -8,7 +8,7 @@ En este proyecto se utilizan las siguientes tecnologias:
     <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
     <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>  
-<p margin= 16px>Desde la estructura básica del HTML hasta los estilos detallados con CSS y las interacciones dinámicas con JavaScript, este proyecto demuestra nuestras habilidades recién adquiridas en el desarrollo web front-end.</p>
+<p margin= 16px>Desde la estructura básica en HTML hasta los estilos detallados con CSS y las interacciones dinámicas con JavaScript, este proyecto demuestra las habilidades recientemente aprendidas en desarrollo web.</p>
 
 # Explora el proyecto
 Siéntete libre de explorar el código y descubrir cómo implemente los diferentes estilos y funciones en la construcción de esta página web. 
