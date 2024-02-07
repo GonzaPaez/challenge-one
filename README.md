@@ -14,6 +14,6 @@ En este proyecto se utilizan las siguientes tecnologias:
 Siéntete libre de explorar el código y descubrir cómo implemente los diferentes estilos y funciones en la construcción de esta página web. 
 Puedes encontrar el HTML en el archivo index.html, los estilos CSS en la carpeta css, y las interacciones dinámicas con JavaScript en la carpeta js.
 
-Contribuye
+# Contribuye
 ¿Tienes alguna idea para mejorar este proyecto? ¡Genial! Estamos abierto a contribuciones. 
 Siéntete libre de hacer un fork del repositorio, enviar algún issue o implementar tus cambios y enviar un pull request.
